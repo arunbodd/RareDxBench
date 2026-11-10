@@ -1,0 +1,94 @@
+{
+  "model": "anthropic/claude-haiku-5-5",
+  "ablation": "hpo+vcf+genes+disease",
+  "n_evaluated": 1396,
+  "metrics": {
+    "n_patients": 1396,
+    "no_prediction": 4,
+    "retention_rate": 0.9857,
+    "mrr": 0.7041,
+    "ndcg@10": 0.7686,
+    "mean_rank": 3.06,
+    "median_rank": 1.0,
+    "recall@1": 0.6032,
+    "recall@5": 0.8202,
+    "recall@10": 0.9097,
+    "recall@20": 0.9835,
+    "recall@50": 0.9857,
+    "per_category": {
+      "known_gene_known_disease_gene_in_kg": {
+        "n": 229,
+        "recall@1": 0.5284,
+        "recall@5": 0.7467,
+        "recall@10": 0.8472,
+        "recall@20": 0.952,
+        "recall@50": 0.9563
+      },
+      "known_gene_known_disease_gene_only_in_gg_kg": {
+        "n": 5,
+        "recall@1": 0.2,
+        "recall@5": 0.8,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "recall@50": 1.0
+      },
+      "known_gene_new_disease_gene_in_kg": {
+        "n": 244,
+        "recall@1": 0.623,
+        "recall@5": 0.9016,
+        "recall@10": 0.959,
+        "recall@20": 0.9959,
+        "recall@50": 0.9959
+      },
+      "new_gene_known_disease_gene_only_in_gg_kg": {
+        "n": 230,
+        "recall@1": 0.4522,
+        "recall@5": 0.6913,
+        "recall@10": 0.8522,
+        "recall@20": 1.0,
+        "recall@50": 1.0
+      },
+      "new_gene_new_disease_gene_only_in_gg_kg": {
+        "n": 232,
+        "recall@1": 0.4871,
+        "recall@5": 0.7241,
+        "recall@10": 0.8491,
+        "recall@20": 0.9655,
+        "recall@50": 0.9698
+      },
+      "new_gene_known_disease_gene_in_kg": {
+        "n": 16,
+        "recall@1": 0.875,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "recall@50": 1.0
+      },
+      "new_gene_new_disease_gene_in_kg": {
+        "n": 18,
+        "recall@1": 0.7778,
+        "recall@5": 0.9444,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "recall@50": 1.0
+      },
+      "known_gene_disease_gene_in_kg": {
+        "n": 418,
+        "recall@1": 0.7679,
+        "recall@5": 0.9258,
+        "recall@10": 0.9713,
+        "recall@20": 0.9928,
+        "recall@50": 0.9952
+      },
+      "known_gene_disease_gene_only_in_gg_kg": {
+        "n": 4,
+        "recall@1": 0.5,
+        "recall@5": 0.75,
+        "recall@10": 1.0,
+        "recall@20": 1.0,
+        "recall@50": 1.0
+      }
+    }
+  },
+  "timestamp": "2026-11-10T09:07:37.229525+00:00"
+}
